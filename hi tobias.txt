@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>uh oh</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background: #111;
+  }
+  .msg {
+    position: absolute;
+    color: hsl(var(--hue), 90%, 60%);
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+    user-select: none;
+    animation: fall linear forwards;
+  }
+  @keyframes fall {
+    from { transform: translateY(-10vh) rotate(0deg); }
+    to { transform: translateY(110vh) rotate(360deg); }
+  }
+</style>
+</head>
+<body>
+<script>
+  function spawn() {
+    const el = document.createElement('div');
+    el.className = 'msg';
+    el.textContent = 'hi tobias';
+    const size = 14 + Math.random() * 40;
+    el.style.fontSize = size + 'px';
+    el.style.left = Math.random() * 100 + 'vw';
+    el.style.setProperty('--hue', Math.floor(Math.random() * 360));
+    const duration = 3 + Math.random() * 4;
+    el.style.animationDuration = duration + 's';
+    document.body.appendChild(el);
+    setTimeout(() => el.remove(), duration * 1000);
+  }
+ 
+  // Initial burst
+  for (let i = 0; i < 60; i++) {
+    setTimeout(spawn, i * 30);
+  }
+ 
+  // Keep flooding forever
+  setInterval(spawn, 60);
+</script>
+</body>
+</html>
