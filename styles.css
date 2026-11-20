@@ -1,0 +1,52 @@
+body{
+font-size: 13px;
+color: black;
+background-color: #fefbd8;
+border: 12vmin solid rgb(34, 24, 84);
+margin: 0px;
+width: auto;
+}
+
+a{
+    color: green;
+    text-decoration: underline;
+}
+table {
+table-layout: fixed;
+width: 45%;        
+border-collapse: collapse;
+}
+
+    th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+        }
+
+images{
+    width: 100%;
+    height: auto;
+
+}
+
+border{
+    border: 0px solid #ccc;
+    padding: 0px;
+    text-align: center;
+}
+
+h2{
+    color: black;
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+h1{
+    color: black;
+    font-size: 33px;
+    text-decoration: underline;
+}
+
+overflow{
+    overflow: auto;
+}
