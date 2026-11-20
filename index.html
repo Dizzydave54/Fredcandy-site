@@ -1,57 +1,61 @@
 <!DOCTYPE html>
+
+<!-- chicken jorkin- Joshi this is to you all you have to do is edit the Black text but not the blue i know you are mc dumb but hello -->
+
 <html lang="en">
   <head>
     <meta charset="UTF-8">
     <title>Fred Candy</title>
     <link rel="icon" type="image/x-icon" href="./lollipop.png">
-      
-      <style>
-        html, body {
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          width: 100%;
-          height: 100%;
-          background: #111;
-        }
-        .msg {
-          position: absolute;
-          color: hsl(var(--hue), 90%, 60%);
-          font-family: Arial, sans-serif;
-          font-weight: bold;
-          white-space: nowrap;
-          user-select: none;
-          animation: fall linear forwards;
-        }
-        @keyframes fall {
-          from { transform: translateY(-10vh) rotate(0deg); }
-          to { transform: translateY(110vh) rotate(360deg); }
-        }
-      </style>
+    <link rel="stylesheet"  href="./styles.css">
   </head>
+  
   <body>
-    <script>
-      function spawn() {
-        const el = document.createElement('div');
-        el.className = 'msg';
-        el.textContent = 'Fred Candy';
-        const size = 11+ Math.random() * 30;
-        el.style.fontSize = size + 'px';
-        el.style.left = Math.random() * 100 + 'vw';
-        el.style.setProperty('--hue', Math.floor(Math.random() * 360));
-        const duration = 3 + Math.random() * 4;
-        el.style.animationDuration = duration + 's';
-        document.body.appendChild(el);
-        setTimeout(() => el.remove(), duration * 1000);
-      }
+    <h1>Fred Candy</h1>
+    <hr>
+      <p>Frederick Arthur Candy is A young rascal so to speak, He is known for his <a href="#Glasses">Glasses</a> and <a href="#height">height</a></p>
+    <br>
+    <h3>contents</h3>
+    <ol>
+      <li><a href="#Glasses">glasses</a></li>
+      <li><a href="#height">height</a></li>
+      <li><a href="#rolesinsociety">roles</a></li>
+      <li><a href="#friends">Friends</a></li>
+    </ol>
     
-      // Initial burst
-      for (let i = 0; i < 60; i++) {
-        setTimeout(spawn, i * 30);
-      }
-    
-      // Keep flooding forever
-      setInterval(spawn, 50);
-    </script>
+    <h2 id="height">Height</h2>
+      <p>Fred candy is 900 meters tall (2700 feet)</p>
+
+
+    <br>
+    <h2 id="Glasses">Glasses</h2>
+      <p>Fred is known for his glasses, he wears them all the time and they are a part of his identity. He has a unique style that makes him stand out in a crowd
+          SIKE, he is bum for his glasses and he should destroy them, with a hydraulic press.</p>
+    <br>
+
+    <h2 id=#rolesinsociety>Roles in Society</h2>
+      <ul>
+          <li>He is a student at the University of Stoopid</li>
+          <li>He is a the sole member of the Fred Candy Fan Club</li>
+          <li>CEO of Scared tech</li>
+        </ul>
+    <h2 id="friends">FRIENDS</h2>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Current status</th>
+          </tr>
+          <tr>
+            <td>N/A</td>
+            <td>N/A</td>
+            <td>N/A</td>
+          </tr>
+        </table>
+      <p>Fred candy doesnt have a friend in the world</p>
+        
   </body>
+
+    
+  
 </html>
