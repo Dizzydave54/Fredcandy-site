@@ -2,7 +2,7 @@ body{
 font-size: 13px;
 color: black;
 background-color: #fefbd8;
-border: 12vmin solid rgb(34, 24, 84);
+border: 10vmin solid rgb(34, 23, 84);
 margin: 0px;
 width: auto;
 }
@@ -44,6 +44,11 @@ h2{
 h1{
     color: black;
     font-size: 33px;
+    text-decoration: underline;
+}
+h3{
+    color: black;
+    font-size: 19px;
     text-decoration: underline;
 }
 
